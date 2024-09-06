@@ -1,0 +1,145 @@
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #2980b9;
+$accent-color: #3498db;
+$background-color: #f4f7f9;
+$text-color: #2d3436;
+$white-color: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: $primary-color;
+  padding: 20px;
+  color: $white-color;
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  nav {
+    margin-top: 10px;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+
+      li {
+        margin: 0 15px;
+
+        a {
+          color: $white-color;
+          text-decoration: none;
+          font-size: 1.2rem;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  background-color: $secondary-color;
+  color: $white-color;
+  padding: 50px;
+  text-align: center;
+  margin-top: 20px;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: $accent-color;
+    color: $white-color;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
+
+.research-areas {
+  margin-top: 50px;
+
+  h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: $primary-color;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      background-color: $white-color;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 30%;
+      text-align: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: $secondary-color;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: $primary-color;
+  color: $white-color;
+
+  p {
+    font-size: 1rem;
+  }
+}
